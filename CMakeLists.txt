@@ -7,4 +7,4 @@ include_directories(include)
 file(GLOB SOURCES "src/*.c")
 
 add_executable(main ${SOURCES})
-target_link_libraries(main PRIVATE ${MPI_C_LIBRARIES})
+target_link_libraries(main PRIVATE ${MPI_C_LIBRARIES} m)

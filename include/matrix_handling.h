@@ -46,7 +46,7 @@ float errorFunction_CaseB(int x, int y);
 float calculateResidium(float* dataField, int N, int x, int y, errorFunctionType errorFunction);
 float updateValue(float* dataField, int N, int x, int y, float residium);
 void swapFields(float **first, float **second);
-float iterate(float** dataField, float** workField, int N, int errorFunctionCase);
+float iterate(float** dataField, float** workField, int N, int M, int errorFunctionCase);
 void printPartition(float *dataPartition, int rows, int N);
 void printDataField(float* dataField, int N);
 void saveCSV(char fileName[], float* data, int N, float residiumNorm, int iteration);

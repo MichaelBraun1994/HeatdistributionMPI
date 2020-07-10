@@ -161,11 +161,11 @@ float getDelta(int N, float begin, float end)
      *second = tmp;
  }
 
- float iterate(float** dataField, float** workField, int N, int errorFunctionCase)
+ float iterate(float** dataField, float** workField, int N, int M, int errorFunctionCase)
  {
      float maxResidium = 0.0f;
 
-    for(int y = 1; y < (N - 1); ++y)
+    for(int y = 1; y < (M - 1); ++y)
     {
         for(int x = 1; x < (N - 1); ++x)
         {
